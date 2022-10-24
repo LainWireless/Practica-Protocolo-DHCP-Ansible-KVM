@@ -12,7 +12,7 @@ bd_pass: asdasd
 interfaz_cliente: enp1s0
 
 #dhcp
-red_muy_aislada: "enp9s0"
+red_muy_aislada: "enp1s0 enp9s0"
 nombre_reserva: cliente-web
 mac_reserva: 52:54:00:d6:86:10
 fixed_address: 10.0.0.2

@@ -3,6 +3,7 @@
     update_cache: yes
     upgrade: dist
   become: yes
+  ignore_errors: yes
 
 - name: "Agregar la clave ssh pública del host al authorized keys de las máquinas"
   authorized_key:

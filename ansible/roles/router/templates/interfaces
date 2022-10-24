@@ -21,3 +21,11 @@ auto enp9s0
 iface enp9s0 inet static
         address {{router_address}}
         netmask {{router_netmask}}
+
+# Red privada-examen
+allow-hotplug enp1s0
+auto enp1s0
+iface enp1s0 inet static
+        address {{router_address2}}
+        netmask {{router_netmask2}}
+    post-up iptables -t nat -A POSTROUTING -s {{direccion_red2}} -o {{interfaz_salida}} -j MASQUERADE

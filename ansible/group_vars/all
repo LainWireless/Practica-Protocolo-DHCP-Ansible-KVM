@@ -25,3 +25,19 @@ option_subnet_mask: 255.255.255.0
 option_broadcast_address: 10.0.0.255
 option_routers: 10.0.0.1
 option_domain_name_servers: 8.8.8.8
+
+#router-examen
+router_address2: 10.20.30.1
+router_netmask2: 255.255.255.0
+direccion_red2: 10.20.30.0/24
+
+#dhcp-examen
+subnet_dhcp2: 10.20.30.0 
+netmask_dhcp2: 255.255.255.0
+default_lease_time2: 3600
+max_lease_time2: 3600
+range2: 10.20.30.100 10.20.30.110
+option_subnet_mask2: 255.255.255.0
+option_broadcast_address2: 10.20.30.255
+option_routers2: 10.20.30.1
+option_domain_name_servers2: 8.8.8.8

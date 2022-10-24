@@ -24,6 +24,16 @@
   roles:
     - clientes
 
+- hosts: cliente2
+  become: true
+  roles:
+    - clientes
+
+- hosts: cliente3
+  become: true
+  roles:
+    - clientes
+
 - hosts: all
   become: true
   roles:
